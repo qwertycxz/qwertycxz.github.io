@@ -1,0 +1,67 @@
+{
+	"author": "qwerty吃小庄",
+	"description": "你看了我的博客，这使你充满了决心",
+	"highlight": {
+		"tab_replace": "\t"
+	},
+	"keywords": [
+		"blog"
+	],
+	"language": "zh",
+	"pretty_urls": {
+		"trailing_index": false
+	},
+	"theme": "a4",
+	"theme_config": {
+		"comment": {
+			"enable": true,
+			"giscus": {
+				"dataCategory": "评论",
+				"dataCategoryId": "DIC_kwDOO3gmsc4CrLTx",
+				"dataEmitMetadata": "1",
+				"dataInputPosition": "top",
+				"dataLoading": "lazy",
+				"dataRepo": "qwertycxz/qwertycxz.github.io",
+				"dataRepoId": "R_kgDOO3gmsQ",
+				"dataStrict": "1"
+			},
+			"use": "giscus"
+		},
+		"favicon": "/favicon.svg",
+		"footerLink": {
+			"info": "若无特殊说明，本站",
+			"所有文章遵循CC BY 4.0协议": "https://creativecommons.org/licenses/by/4.0",
+			"所有代码遵循Apache 2.0协议": "https://www.apache.org/licenses/LICENSE-2.0"
+		},
+		"index": {
+			"footer": "你看了我的博客，这使你充满了决心。",
+			"list": true,
+			"width": "big"
+		},
+		"indexInfo": {
+			"allViewCount": false
+		},
+		"menu": {
+			"首页": "/",
+			"分类": "/categories",
+			"标签": "/tags",
+			"关于": "/about"
+		},
+		"post": {
+			"footer": "你看了我的博客，这使你充满了决心。",
+			"themeInfo": false,
+			"width": "big"
+		},
+		"postInfo": {
+			"viewCount": false
+		},
+		"showInMenu": [
+			"分类",
+			"标签",
+			"关于"
+		]
+	},
+	"timezone": "Asia/Shanghai",
+	"title": "qwerty吃小庄的个人博客",
+	"url": "https://qwertycxz.github.io"
+}

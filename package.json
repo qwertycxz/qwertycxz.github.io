@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"author": "qwerty吃小庄",
+	"dependencies": {
+		"hexo": "^7.3.0",
+		"hexo-generator-category": "^2.0.0",
+		"hexo-generator-index": "^4.0.0",
+		"hexo-generator-tag": "^2.0.0",
+		"hexo-renderer-ejs": "^2.0.0",
+		"hexo-renderer-marked": "^7.0.1",
+		"hexo-theme-a4": "^1.9.8"
+	},
+	"description": "qwerty吃小庄的个人博客",
+	"funding": "https://ko-fi.com/qwertycxz",
+	"hexo": {
+		"version": "7.3.0"
+	},
+	"homepage": "TBD",
+	"keywords": [
+		"blog",
+		"hexo"
+	],
+	"license": "(Apache-2.0 OR CC-BY-4.0)",
+	"name": "qwertycxz.github.io",
+	"private": true,
+	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
+	"scripts": {
+		"generate": "hexo --config hexo.json generate",
+		"page": "hexo --config hexo.json new scaffold_page",
+		"post": "hexo --config hexo.json new scaffold_post"
+	}
+}
