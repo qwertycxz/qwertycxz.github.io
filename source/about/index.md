@@ -2,12 +2,15 @@
 layout: page
 ---
 你好，我是qwerty吃小庄，欢迎来到我的博客。( •̀ ω •́ )✧
+
 # 关于我
 我是一名（即将）就读于[CNIC](https://cnic.cas.cn)的硕士研究生。对编程开发与折腾系统颇有兴趣，开设博客也是分享一些我在技术和生活方面的一些见解。
+
 ## 友情链接
 [GitHub](https://github.com/qwertycxz)
 
 [Ko-fi](https://ko-fi.com/qwertycxz)
+
 # 关于本博客
 本博客由[Hexo](https://hexo.io)驱动，采用[A4](https://doc.ninojay.top)主题，[Giscus](https://giscus.app)作为评论系统。
 
