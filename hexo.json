@@ -34,7 +34,7 @@
 			},
 			"use": "giscus"
 		},
-		"favicon": "/favicon.svg",
+		"favicon": "/images/favicon.svg",
 		"footerLink": {
 			"info": "若无特殊说明，本站",
 			"所有文章遵循CC BY 4.0协议": "https://creativecommons.org/licenses/by/4.0",

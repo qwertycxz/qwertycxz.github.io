@@ -1,3 +1,24 @@
 * {
 	tab-size: 4;
 }
+.footnotes {
+	font-size: medium;
+}
+figcaption {
+	text-align: center;
+}
+img {
+	margin: auto;
+}
+ol[type="A"] {
+	list-style-type: upper-alpha;
+}
+ol[type="a"] {
+	list-style-type: lower-alpha;
+}
+ol[type="I"] {
+	list-style-type: upper-roman;
+}
+ol[type="i"] {
+	list-style-type: lower-roman;
+}
