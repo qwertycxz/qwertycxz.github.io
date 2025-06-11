@@ -5,7 +5,7 @@ title: 记录一段关于三维装箱问题的算法
 date: 2022-07-11 22:53:15
 excerpt: 写了段关于三维装箱问题的算法,特此记录一下。
 ---
-[这篇论文]: http://www.jos.org.cn/1000-9825/18/2083.pdf '三维装箱问题的组合启发式算法'
+
 本代码基于[组合启发式算法][这篇论文]，利用模拟退火的思想进行结果的拟合。
 
 代码分为四个部分：
@@ -16,9 +16,11 @@ excerpt: 写了段关于三维装箱问题的算法,特此记录一下。
 4. 输出图像（利用[matplotlib库](https://matplotlib.org '官网')）。
 
 # 重叠判定算法
+
 基本全盘照抄的[CSDN的一段代码](https://blog.csdn.net/weixin_40929065/article/details/113243751)。
 
 主体思想是分别判断两个物体的正视图、侧视图和俯视图是否重叠,若三者有二者甚至三者发生重叠,则这两个物体一定重叠。
+
 ```py
 if item1[0] + position[0] <= box_length and item1[1] + position[1] <= box_width and item1[2] + position[2] <= box_height: # 先特判一下该物品是否在容器内
 	for item2 in putted_items: # 也许有更高效的方法吧,但我暂且就暴力遍历了
@@ -37,6 +39,7 @@ if item1[0] + position[0] <= box_length and item1[1] + position[1] <= box_width 
 ```
 
 # 定向装箱算法
+
 主要参考自[这篇论文]。
 
 为简便起见，下称物体的坐标为$(x_0, y_0, z_0)$，物体的长、宽、高为$l, w, h$。
@@ -107,9 +110,11 @@ def pack(items):
 ```
 
 # 模拟退火算法
+
 还是参考自[这篇论文]。
 
 装箱时，装箱的顺序与物体的方向均会对装箱的填充率产生影响，因此在退火时随机打乱这两个值进行计算。
+
 ```py
 for i in range(2): # 2次退火
 	temperature, area_length = 0.92, items_kind
@@ -130,10 +135,13 @@ for i in range(2): # 2次退火
 		temperature *= 0.92
 	print(i + 1, '次退火填充率:', max_filling_rate, '放置数量:', len(best_sizes))
 ```
+
 # 图像输出算法
+
 参考自[StackOverflow的一篇问答](https://stackoverflow.com/questions/49277753)。
 
 其实我看不懂这段鬼画符写的是啥,就不献丑了。
+
 ```py
 subplot = figure().add_subplot(projection='3d')
 subplot.set_box_aspect((box_length, box_width, box_height))
@@ -162,6 +170,7 @@ show()
 谨此作为一个记录，防止出现那种“写的时候只有我和上帝看得懂，现在只有上帝能看懂”的悲剧。
 
 # 全文代码
+
 ```py
 from math import exp
 from matplotlib.colors import CSS4_COLORS
@@ -306,3 +315,5 @@ while True: # main()
 		subplot.set_zlim([0, box_height])
 		show()
 ```
+
+[这篇论文]: http://www.jos.org.cn/1000-9825/18/2083.pdf

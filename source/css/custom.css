@@ -10,15 +10,15 @@ figcaption {
 img {
 	margin: auto;
 }
-ol[type="A"] {
+ol[type='A'] {
 	list-style-type: upper-alpha;
 }
-ol[type="a"] {
+ol[type='a'] {
 	list-style-type: lower-alpha;
 }
-ol[type="I"] {
+ol[type='I'] {
 	list-style-type: upper-roman;
 }
-ol[type="i"] {
+ol[type='i'] {
 	list-style-type: lower-roman;
 }

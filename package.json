@@ -12,6 +12,9 @@
 		"hexo-theme-a4": "^1.9.8"
 	},
 	"description": "qwerty吃小庄的个人博客",
+	"devDependencies": {
+		"prettier": "^3.5.3"
+	},
 	"funding": "https://ko-fi.com/qwertycxz",
 	"hexo": {
 		"version": "7.3.0"
@@ -24,8 +27,19 @@
 	"license": "(Apache-2.0 OR CC-BY-4.0)",
 	"name": "qwertycxz.github.io",
 	"private": true,
+	"prettier": {
+		"arrowParens": "avoid",
+		"jsxSingleQuote": true,
+		"proseWrap": "never",
+		"quoteProps": "consistent",
+		"semi": false,
+		"singleQuote": true,
+		"tabWidth": 4,
+		"useTabs": true
+	},
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
 	"scripts": {
+		"format": "prettier -w .",
 		"generate": "hexo --config hexo.json generate",
 		"page": "hexo --config hexo.json new scaffold_page",
 		"post": "hexo --config hexo.json new scaffold_post"

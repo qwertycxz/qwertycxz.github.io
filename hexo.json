@@ -4,15 +4,10 @@
 	"highlight": {
 		"tab_replace": "\t"
 	},
-	"keywords": [
-		"blog"
-	],
+	"keywords": ["blog"],
 	"language": "zh",
 	"pandoc": {
-		"args": [
-			"--wrap",
-			"preserve"
-		]
+		"args": ["--wrap", "preserve"]
 	},
 	"permalink": "posts/:title/",
 	"pretty_urls": {
@@ -62,11 +57,7 @@
 		"postInfo": {
 			"viewCount": false
 		},
-		"showInMenu": [
-			"分类",
-			"标签",
-			"关于"
-		],
+		"showInMenu": ["分类", "标签", "关于"],
 		"tool": {
 			"topToc": false
 		}
