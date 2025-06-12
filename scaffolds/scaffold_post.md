@@ -1,7 +1,7 @@
 ---
 categories: []
-date: { { date } }
+date: {{ date }}
 excerpt:
 tags: []
-title: { { title } }
+title: {{ title }}
 ---

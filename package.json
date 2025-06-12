@@ -39,7 +39,7 @@
 	},
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
 	"scripts": {
-		"format": "prettier -w .",
+		"format": "prettier -w . !scaffolds",
 		"generate": "hexo --config hexo.json generate",
 		"page": "hexo --config hexo.json new scaffold_page",
 		"post": "hexo --config hexo.json new scaffold_post"
