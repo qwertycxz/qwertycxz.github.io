@@ -2,14 +2,17 @@
 
 我的博客。
 
+## 依赖
+
+`bun`、`pandoc`
+
 ## 部署
 
 ```sh
-git clone github.com/qwertycxz/qwertycxz.github.io
-cd qwertycxz.github.io
 bun i
 bun post <name> # 发布新博文
 bun page <name> # 发布新页面
+bun format # 使用Prettier格式化
 bun generate # 生成静态页面至public目录
 ```
 

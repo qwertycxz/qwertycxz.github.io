@@ -1,6 +1,6 @@
 ---
-categories: [Game]
-tags: [A Dance of Fire and Ice]
+categories: [游戏]
+tags: [冰与火之舞]
 title: 《冰与火之舞》一键二球转三球工具使用说明
 date: 2022-07-26 17:11:50
 excerpt: https://www.bilibili.com/video/av898458557
