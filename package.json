@@ -3,6 +3,7 @@
 	"author": "qwerty吃小庄",
 	"dependencies": {
 		"hexo": "^7.3.0",
+		"hexo-filter-kroki": "^2.1.10",
 		"hexo-generator-category": "^2.0.0",
 		"hexo-generator-index": "^4.0.0",
 		"hexo-generator-tag": "^2.0.0",
@@ -40,7 +41,7 @@
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
 	"scripts": {
 		"dev": "hexo --config hexo.json generate -w",
-		"format": "prettier -w . !scaffolds",
+		"format": "prettier -w . !pandoc !scaffolds",
 		"generate": "hexo --config hexo.json generate",
 		"page": "hexo --config hexo.json new scaffold_page",
 		"post": "hexo --config hexo.json new scaffold_post"

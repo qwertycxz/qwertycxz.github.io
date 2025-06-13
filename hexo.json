@@ -7,7 +7,7 @@
 	"keywords": ["blog"],
 	"language": "zh",
 	"pandoc": {
-		"args": ["--wrap", "preserve"]
+		"args": ["-L", "pandoc/list-table/list-table.lua", "--wrap", "preserve"]
 	},
 	"permalink": "posts/:title/",
 	"pretty_urls": {

@@ -1,0 +1,3 @@
+[submodule "pandoc/list-table"]
+	path = pandoc/list-table
+	url = https://github.com/pandoc-ext/list-table
