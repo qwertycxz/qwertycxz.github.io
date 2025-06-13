@@ -22,3 +22,17 @@ ol[type='I'] {
 ol[type='i'] {
 	list-style-type: lower-roman;
 }
+
+.黑幕 p,
+span.黑幕 {
+	background-color: black;
+	color: black;
+	display: inline;
+}
+.黑幕 p:hover,
+span.黑幕:hover {
+	color: white;
+}
+caption:has(.底表题) {
+	caption-side: bottom;
+}
