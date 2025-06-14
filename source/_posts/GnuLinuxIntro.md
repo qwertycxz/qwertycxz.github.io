@@ -6,9 +6,9 @@ date: 2023-05-01 18:47:03
 excerpt: 补充一点我自己对Linux入门的想法
 ---
 
-~~嗯，Linux是一个[内核](https://kernel.org)的名字，只是我们通常把它当作GNU/Linux的简称来说。~~
+~~嗯，Linux是一个[内核](https://kernel.org 'Linux内核官网')的名字，只是我们通常把它当作GNU/Linux的简称来说。~~
 
-这篇学长写的文章[Linux入门]已经很完善了，所以我只是补充一点我自己的想法。
+这篇学长写的[文章][Linux入门]已经很完善了，所以我只是补充一点我自己的想法。
 
 # 选择你的Linux
 
@@ -18,7 +18,7 @@ excerpt: 补充一点我自己对Linux入门的想法
 
 这是最廉价、最易得的一种Linux入门方式，即使是把虚拟机玩坏了也没关系。
 
-- [WSL2（WSL）](https://learn.microsoft.com/zh-cn/windows/wsl)：微软官方的模拟器，只能模拟GNU/Linux。功能不及Vmware，但是对Hyper-V的兼容很好。
+- [WSL2（WSL）](https://learn.microsoft.com/zh-cn/windows/wsl 'Windows Subsystem for Linux')：微软官方的模拟器，只能模拟GNU/Linux。功能不及Vmware，但是对Hyper-V的兼容很好。
 - [VMware](https://www.vmware.com)：主流的模拟器，同时支持模拟多种系统，如Windows、DOS、GNU/Linux等，功能强大。新版本的VMware对Hyper-V的兼容也很不错。
 - [Hyper-V](https://learn.microsoft.com/zh-cn/windows-server/virtualization/hyper-v)：功能同样很强大，但Windows家庭版如果想用费的力气不会小。
 
@@ -70,7 +70,7 @@ Heng-Client^[Leverage的评测机。]使用了[CentOS](https://centos.org)。
 
 Leverage使用了[ZSH](https://www.zsh.org)。
 
-[学长的文章][Linux入门]中推荐了[Xshell](https://blog.oi.al/post/basic-use-of-linux#Xshell_36)
+[学长的文章][Linux入门]中推荐了[Xshell](https://blog.oi.al/post/basic-use-of-linux#Xshell_36 '学长的文章')
 
 （顺带一提，是个能用的Console就可以使用SSH，只不过使用更强大的Shell可以提高你的效率罢了）
 

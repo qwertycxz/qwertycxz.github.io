@@ -26,7 +26,7 @@ Web Server也有很多种，Leverage采用[Nginx](https://nginx.org)，本博客
 
 各个 Web Server 有各自的优点，可以自行搜索了解。
 
-另外，推荐尽可能使用包管理器进行各类软件的安装，[CentOS Stream](https://www.centos.org/centos-stream)自带的[dnf](https://docs.fedoraproject.org/zh_Hans/quick-docs/dnf)、[Ubuntu](https://cn.ubuntu.com)自带的[apt](https://documentation.ubuntu.com/server/how-to/software/package-management)都是强大而好用的包管理器。
+另外，推荐尽可能使用包管理器进行各类软件的安装，[CentOS Stream](https://www.centos.org/centos-stream)自带的[dnf](https://docs.fedoraproject.org/zh_Hans/quick-docs/dnf 'Dandified YUM')、[Ubuntu](https://cn.ubuntu.com)自带的[apt](https://documentation.ubuntu.com/server/how-to/software/package-management 'Advanced Packaging Tool')都是强大而好用的包管理器。
 
 # 数据库
 
@@ -52,18 +52,18 @@ Leverage使用[MariaDB](https://mariadb.org)，本博客（的上一个[WordPres
 
 然后你只能用IP地址访问你的网站，输一堆数字真的很丑。
 
-所以你需要[域名](https://blog.oi.al/post/web-page-related#_207)，别忘了还要搞DNS。
+所以你需要[域名](https://blog.oi.al/post/web-page-related#_207 '学长的文章')，别忘了还要搞DNS。
 
 # SSL证书
 
 这很重要（虽说Leverage目前的SSL证书爆炸了），有效防范中间人攻击。如果你的域名提供商也赠送免费的SSL证书，那再好不过了。如果不，那就去[Let’s Encrypt](https://letsencrypt.org/zh-cn)和[ZeroSSL](https://zerossl.com)领点免费的就行。
 
-[HTTP](https://blog.oi.al/post/web-page-related#http_166)+[SSL](https://blog.oi.al/post/web-page-related#ssl__217)=HTTPS
+[HTTP](https://blog.oi.al/post/web-page-related#http_166 '学长的文章')+[SSL](https://blog.oi.al/post/web-page-related#ssl__217 '学长的文章')=HTTPS
 
 # 备案
 
 如果你的域名或服务器在国内，那么开放80/443端口还有重要的一步：备案。
 
-请参照服务商的指引（如[阿里云](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/icp-filing-application-overview)）进行，不会有什么太大的挫折。唯一的问题就是网站名称不能写博客啊啥的，你看现在这个网站叫做“qwerty吃小庄的个人博客”，其实备案名称叫做“橙色的桌子”。(⊙﹏⊙)
+请参照服务商的指引（如[阿里云](https://help.aliyun.com/zh/icp-filing/basic-icp-service/user-guide/icp-filing-application-overview '阿里云的文档')）进行，不会有什么太大的挫折。唯一的问题就是网站名称不能写博客啊啥的，你看现在这个网站叫做“qwerty吃小庄的个人博客”，其实备案名称叫做“橙色的桌子”。(⊙﹏⊙)
 
 完成 ICP 备案以及网安备案后，你要把备案号放到网站首页的底部，然后就齐活了。
