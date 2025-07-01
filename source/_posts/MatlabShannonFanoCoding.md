@@ -1,6 +1,6 @@
 ---
 categories: [编程]
-tags: [算法, 随笔]
+tags: [Matlab, 算法, 随笔]
 title: Matlab实现香农编码
 date: 2023-11-13 16:48:23
 excerpt: 四行代码解决香农编码

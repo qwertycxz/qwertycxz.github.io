@@ -1,6 +1,6 @@
 ---
 categories: [编程]
-tags: [算法]
+tags: [Python, 算法]
 title: 记录一段关于三维装箱问题的算法
 date: 2022-07-11 22:53:15
 excerpt: 写了段关于三维装箱问题的算法,特此记录一下。
