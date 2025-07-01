@@ -10,11 +10,11 @@
 		"hexo-renderer-ejs": "^2.0.0",
 		"hexo-renderer-pandoc": "^0.5.0",
 		"hexo-renderer-stylus": "^3.0.1",
-		"hexo-theme-a4": "^1.9.8"
+		"hexo-theme-a4": "^1.9.9"
 	},
 	"description": "qwerty吃小庄的个人博客",
 	"devDependencies": {
-		"prettier": "^3.5.3"
+		"prettier": "^3.6.2"
 	},
 	"funding": "https://ko-fi.com/qwertycxz",
 	"hexo": {
@@ -43,7 +43,7 @@
 		"dev": "hexo --config hexo.json generate -w",
 		"format": "prettier -w . !pandoc !scaffolds",
 		"generate": "hexo --config hexo.json generate",
-		"page": "hexo --config hexo.json new scaffold_page",
+		"page": "hexo --config hexo.json new page",
 		"post": "hexo --config hexo.json new scaffold_post"
 	}
 }

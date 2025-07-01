@@ -14,7 +14,7 @@
         "hexo-theme-a4": "^1.9.8",
       },
       "devDependencies": {
-        "prettier": "^3.5.3",
+        "prettier": "^3.6.2",
       },
     },
   },
@@ -137,7 +137,7 @@
 
     "hexo-renderer-stylus": ["hexo-renderer-stylus@3.0.1", "", { "dependencies": { "nib": "^1.2.0", "stylus": "^0.62.0" } }, "sha512-cFm8ZwShBBeFcQwOXc8EK7lIZnSYVD6OJykdL4GBw99hxc4eD5Hlsi32nRzE8sgKv00jhX1s9Da3GVVFMPAVQg=="],
 
-    "hexo-theme-a4": ["hexo-theme-a4@1.9.8", "", {}, "sha512-oNMMeOvdrZ4oock7rLQDqKIIBaACqfI3Ko6IF1PeA4k0NrOVWSfiS9VSlBNOnssEUBVKrI98PO1a703krR5I8Q=="],
+    "hexo-theme-a4": ["hexo-theme-a4@1.9.9", "", {}, "sha512-QbOytjbkulp1xGdChy0Ojp+I7kuBDV2foA7p4Yd7DiaTv+yb33ztA6gVL/BzLwKr6O2a17f0fknCymiXIL+R+Q=="],
 
     "hexo-util": ["hexo-util@3.3.0", "", { "dependencies": { "camel-case": "^4.1.2", "cross-spawn": "^7.0.3", "deepmerge": "^4.2.2", "highlight.js": "^11.6.0", "htmlparser2": "^9.0.0", "prismjs": "^1.29.0", "strip-indent": "^3.0.0" } }, "sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q=="],
 
@@ -215,7 +215,7 @@
 
     "picomatch": ["picomatch@2.3.1", "", {}, "sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA=="],
 
-    "prettier": ["prettier@3.5.3", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw=="],
+    "prettier": ["prettier@3.6.2", "", { "bin": { "prettier": "bin/prettier.cjs" } }, "sha512-I7AIg5boAr5R0FFtJ6rCfD+LFsWHp81dolrFD8S79U9tb8Az2nGrJncnMSnys+bpQJfRUzqs9hnA81OAA3hCuQ=="],
 
     "pretty-hrtime": ["pretty-hrtime@1.0.3", "", {}, "sha512-66hKPCr+72mlfiSjlEB1+45IjXSqvVAIy6mocupoww4tBFE9R9IhwwUGoI4G++Tc9Aq+2rxOt0RFU6gPcrte0A=="],
 

@@ -14,6 +14,7 @@ bun post <name> # 发布新博文
 bun page <name> # 发布新页面
 bun format # 使用Prettier格式化
 bun generate # 生成静态页面至public目录
+bun dev # 监控source目录文件修改，实时更新到public目录
 ```
 
 ## 许可证
