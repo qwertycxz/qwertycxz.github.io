@@ -35,7 +35,7 @@
 		"quoteProps": "consistent",
 		"semi": false,
 		"singleQuote": true,
-		"tabWidth": 4,
+		"tabWidth": 2,
 		"useTabs": true
 	},
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",

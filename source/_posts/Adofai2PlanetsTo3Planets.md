@@ -28,8 +28,8 @@ Github仓库: <https://github.com/qwertycxz/ADOFAI-2PlanetsTo3Planets>
 
 1. 单击`OpenFile`，加载关卡文件；
 2. 在`Start`和`End`输入框输入转换区间，区间需满足$Min \leqslant Start < End \leqslant Max$；
-    - $Min = 1$
-    - $Max = 关卡的方块总数量$
+   - $Min = 1$
+   - $Max = 关卡的方块总数量$
 3. 在`To`输入框输入要转换成多少球^[多于3球？可以也不可以，懂的都懂。]；
 4. 单击`Apply New Interval`以应用这一区间；
 5. 若有区间不需要，可以右键删除；
