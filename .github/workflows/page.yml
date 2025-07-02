@@ -1,0 +1,24 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+jobs:
+  page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+        with:
+          submodules: recursive
+      - uses: awalsh128/cache-apt-pkgs-action@master
+        with:
+          packages: pandoc
+      - uses: oven-sh/setup-bun@main
+      - run: bun i
+      - run: bun format:check
+      - run: bun generate
+      - uses: actions/upload-pages-artifact@main
+        with:
+          path: public
+      - uses: actions/deploy-pages@main
+name: Page
+on:
+  push:
+    branches:
+      - master

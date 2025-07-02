@@ -1,0 +1,11 @@
+# yaml-language-server: $schema=https://json.schemastore.org/github-workflow
+jobs:
+  page:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main
+      - uses: oven-sh/setup-bun@main
+      - run: bun i
+      - run: bun format:check
+name: Format
+on: pull_request

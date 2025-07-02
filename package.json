@@ -41,7 +41,8 @@
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
 	"scripts": {
 		"dev": "hexo --config hexo.json generate -w",
-		"format": "prettier -w . !pandoc !scaffolds",
+		"format": "prettier -w .",
+		"format:check": "prettier -c .",
 		"generate": "hexo --config hexo.json generate",
 		"page": "hexo --config hexo.json new page",
 		"post": "hexo --config hexo.json new scaffold_post"
