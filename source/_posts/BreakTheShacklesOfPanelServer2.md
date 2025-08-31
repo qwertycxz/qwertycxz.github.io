@@ -67,14 +67,28 @@ public class Bash {
 在F12中翻代码，发现：
 
 ```js
-for (let i in ["sudo ", "su ", "root", "./", "sh ", "bash ", "wget ", "curl ", "apt ", "unzip ", "tar ", "cd "]) {
-	if (r.includes(i)) return ne({
-		key: "server:setup",
-		type: "error",
-		message: "该命令已被禁止"
-	})
+for (let i in [
+	'sudo ',
+	'su ',
+	'root',
+	'./',
+	'sh ',
+	'bash ',
+	'wget ',
+	'curl ',
+	'apt ',
+	'unzip ',
+	'tar ',
+	'cd ',
+]) {
+	if (r.includes(i))
+		return ne({
+			key: 'server:setup',
+			type: 'error',
+			message: '该命令已被禁止',
+		})
 }
-y.send("send command", r)
+y.send('send command', r)
 ```
 
 含`cd`、`wget`、`curl`等常用关键命令的语句被禁止，其他语句则通过Websocket发送。
