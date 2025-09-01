@@ -1,7 +1,7 @@
 ---
 categories: [编程]
 tags: [我的世界, 突破面板服的桎梏]
-title: 突破面板服的桎梏 3：守护程序
+title: 突破面板服的桎梏 3：守护程序与Telnet
 date: 2025-08-31 18:14:27
 excerpt: 通过PM2，在面板服中架设群组服与Telnet
 ---
