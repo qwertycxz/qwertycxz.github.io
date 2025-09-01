@@ -22,6 +22,9 @@ ol[type='I'] {
 ol[type='i'] {
 	list-style-type: lower-roman;
 }
+tr.header {
+	display: contents;
+}
 
 .黑幕 p,
 span.黑幕 {
