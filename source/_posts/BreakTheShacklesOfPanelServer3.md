@@ -178,6 +178,29 @@ pm2 start telnetd -n telnet --namespace shell -- -Fp 12345 -l bash
 
 > 如果在服务器面板吞下了赛博灯泡，只需在Telnet中`kill -2`赛博灯泡的进程就可以了，简单又方便！
 
+## 密码登录Telnet
+
+然后你就发现世界上所有人都可以登录你的面板服了，服务器秒变RBQ啊喂……
+
+我们启动Telnetd的指令，通过`-l`参数指定在启动时使用`bash`，进入bash自然不需要密码。那我们需要在启动时启动一个密码认证程序，认证成功后进入bash就可以了。
+
+```sh
+#!/bin/bash
+read -s password
+if [[ $password == "PASSWORD" ]]; then
+	bash
+fi
+```
+
+将这段代码保存为`~/bin/auth.sh`，并赋予可执行权限。将pm2脚本改为：
+
+```sh
+# 如果你还没输入上面那个指令
+pm2 start telnetd -n telnet --namespace shell -- -Fp 12345 -l ~/bin/auth.sh
+# 如果你已经输入了上面的指令
+pm2 start telnet -- -Fp 12345 -l ~/bin/auth.sh
+```
+
 # 重新利用面板控制台
 
 我们希望服务器面板可以快捷地查看群组服所有服务器的日志，并发送后台命令到各个服务器。但PM2做不到这一点：`pm2 logs`只能查看日志无法发送命令，`pm2 send`只能发送命令无法查看日志，`pm2 attach`虽然既能查看日志也能发送命令，但一次只能服务一个进程。如果有办法将这些功能整合在一起就好了。
