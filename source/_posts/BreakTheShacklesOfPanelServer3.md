@@ -250,3 +250,9 @@ survival gamerule keepInventory true
 - 配置不了数据库。
 
 下一期，我将解决剩余的两个顽疾，敬请期待！
+
+# 补充
+
+因为没有root权限，系统级包管理器不好使，我们就倾向于使用脚本语言的包管理器。本期安装了JavaScript运行时Bun，如果要安装Python的话，建议安装[Conda](https://www.anaconda.com/docs/getting-started/anaconda/install#linux-installer)，如果纯英文看不太懂的话，这里有一篇安装Anaconda的[教程](https://zhuanlan.zhihu.com/p/18828836724)。
+
+有一个叫做[trash-cli](https://github.com/andreafrancia/trash-cli/blob/master/README_zh-CN.rst)的工具，强烈各位使用。这是一个以Python编写的回收站程序，可替代掉危险的`rm`指令。安装完Python后使用pip安装即可。

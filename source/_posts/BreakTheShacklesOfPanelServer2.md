@@ -181,6 +181,8 @@ java -Xmx4G -jar server.jar &
 
 这是一篇介绍别名的[教程](https://www.junmajinlong.com/shell/script_course/shell_alias)。将别名添加到`/home/xxx/.bashrc`中即可生效。
 
+> `.bashrc`的内容会在Bash启动时自动执行。
+
 ## 我没权限修改`/home/xxx/.bashrc`
 
 真是不可思议……但是有解！欢迎留言，我可以帮助构建不使用`.bashrc`也可使用别名的BashJar。
