@@ -1,7 +1,6 @@
 # yaml-language-server: $schema=https://www.schemastore.org/dependabot-2.0
 updates:
-  - assignees:
-      - qwertycxz
+  - assignees: [qwertycxz]
     commit-message:
       include: scope
       prefix: bun
@@ -9,8 +8,7 @@ updates:
     package-ecosystem: bun
     schedule:
       interval: daily
-  - assignees:
-      - qwertycxz
+  - assignees: [qwertycxz]
     commit-message:
       include: scope
       prefix: gitsubmodule
@@ -18,8 +16,7 @@ updates:
     package-ecosystem: gitsubmodule
     schedule:
       interval: daily
-  - assignees:
-      - qwertycxz
+  - assignees: [qwertycxz]
     commit-message:
       include: scope
       prefix: actions

@@ -26,8 +26,7 @@ jobs:
 name: Page
 on:
   push:
-    branches:
-      - master
+    branches: [master]
 permissions:
   contents: read
   id-token: write
