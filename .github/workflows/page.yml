@@ -11,10 +11,11 @@ jobs:
           fetch-depth: 0
           filter: blob:none
           submodules: recursive
-      - uses: awalsh128/cache-apt-pkgs-action@master
+      - uses: awalsh128/cache-apt-pkgs-action@9f7a885e33ff6f8166b600e3e74a981ec11b92c3
         with:
           packages: pandoc
-      - uses: oven-sh/setup-bun@main
+      - uses: chetan/git-restore-mtime-action@cbf8161ddb4e9b162409104954fb540e8a38c1da
+      - uses: oven-sh/setup-bun@22457c87c1b161cf7dde222c3e82b2b5f8d2bed2
       - run: bun i
       - run: bun format:check
       - run: bun generate
@@ -27,3 +28,7 @@ on:
   push:
     branches:
       - master
+permissions:
+  contents: read
+  id-token: write
+  pages: write
