@@ -11,7 +11,7 @@
         "hexo-renderer-ejs": "^2.0.0",
         "hexo-renderer-pandoc": "^0.5.0",
         "hexo-renderer-stylus": "^3.0.1",
-        "hexo-theme-a4": "^1.9.8",
+        "hexo-theme-a4": "^2.0.0",
       },
       "devDependencies": {
         "prettier": "^3.6.2",
@@ -137,7 +137,7 @@
 
     "hexo-renderer-stylus": ["hexo-renderer-stylus@3.0.1", "", { "dependencies": { "nib": "^1.2.0", "stylus": "^0.62.0" } }, "sha512-cFm8ZwShBBeFcQwOXc8EK7lIZnSYVD6OJykdL4GBw99hxc4eD5Hlsi32nRzE8sgKv00jhX1s9Da3GVVFMPAVQg=="],
 
-    "hexo-theme-a4": ["hexo-theme-a4@1.9.9", "", {}, "sha512-QbOytjbkulp1xGdChy0Ojp+I7kuBDV2foA7p4Yd7DiaTv+yb33ztA6gVL/BzLwKr6O2a17f0fknCymiXIL+R+Q=="],
+    "hexo-theme-a4": ["hexo-theme-a4@2.0.0", "", {}, "sha512-Mgo/fOMw3p8YB10n2kWupX+q5pbGtcA92EZ3PfypvvstaazJaunLU/3gzdkONsG5GTF2Di3Gtu4c4E9lFpbhWA=="],
 
     "hexo-util": ["hexo-util@3.3.0", "", { "dependencies": { "camel-case": "^4.1.2", "cross-spawn": "^7.0.3", "deepmerge": "^4.2.2", "highlight.js": "^11.6.0", "htmlparser2": "^9.0.0", "prismjs": "^1.29.0", "strip-indent": "^3.0.0" } }, "sha512-YvGngXijE2muEh5L/VI4Fmjqb+/yAkmY+VuyhWVoRwQu1X7bmWodsfYRXX7CUYhi5LqsvH8FAe/yBW1+f6ZX4Q=="],
 
