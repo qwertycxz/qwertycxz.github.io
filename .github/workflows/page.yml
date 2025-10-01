@@ -14,7 +14,7 @@ jobs:
       - uses: awalsh128/cache-apt-pkgs-action@23602f4229bd3df447e361d5b9ec89c234fe9292
         with:
           packages: pandoc
-      - uses: chetan/git-restore-mtime-action@cbf8161ddb4e9b162409104954fb540e8a38c1da
+      - uses: chetan/git-restore-mtime-action@bca85c11349c76b2dbac06d07edf6c2407dbab1e
       - uses: oven-sh/setup-bun@22457c87c1b161cf7dde222c3e82b2b5f8d2bed2
       - run: bun i
       - run: bun format:check
