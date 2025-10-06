@@ -11,7 +11,7 @@ jobs:
           fetch-depth: 0
           filter: blob:none
           submodules: recursive
-      - uses: awalsh128/cache-apt-pkgs-action@23602f4229bd3df447e361d5b9ec89c234fe9292
+      - uses: awalsh128/cache-apt-pkgs-action@acb598e5ddbc6f68a970c5da0688d2f3a9f04d05
         with:
           packages: pandoc
       - uses: chetan/git-restore-mtime-action@bca85c11349c76b2dbac06d07edf6c2407dbab1e
