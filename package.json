@@ -2,7 +2,7 @@
 	"$schema": "https://json.schemastore.org/package",
 	"author": "qwerty吃小庄",
 	"dependencies": {
-		"hexo": "^8.1.0",
+		"hexo": "^8.1.1",
 		"hexo-filter-kroki": "^2.1.10",
 		"hexo-generator-category": "^2.0.0",
 		"hexo-generator-index": "^4.0.0",
