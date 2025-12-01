@@ -14,7 +14,7 @@
 	},
 	"description": "qwerty吃小庄的个人博客",
 	"devDependencies": {
-		"prettier": "^3.7.1"
+		"prettier": "^3.7.3"
 	},
 	"funding": "https://ko-fi.com/qwertycxz",
 	"hexo": {
