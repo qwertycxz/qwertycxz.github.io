@@ -4,7 +4,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
-      - uses: oven-sh/setup-bun@bc6f04ce3baa207596266ba91e76b900bfe70da2
+      - uses: oven-sh/setup-bun@563911925f97b52638b2d040c6390de93f9f241a
       - run: bun i
       - run: bun format:check
 name: Format
