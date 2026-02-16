@@ -11,11 +11,9 @@ jobs:
           fetch-depth: 0
           filter: blob:none
           submodules: recursive
-      - uses: awalsh128/cache-apt-pkgs-action@acb598e5ddbc6f68a970c5da0688d2f3a9f04d05
-        with:
-          packages: pandoc
-      - uses: chetan/git-restore-mtime-action@d186aca54f8760da4dec55313195e51ed3ebb0b3
-      - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3
+      - uses: chetan/git-restore-mtime-action@cbf8161ddb4e9b162409104954fb540e8a38c1da
+      - uses: oven-sh/setup-bun@22457c87c1b161cf7dde222c3e82b2b5f8d2bed2
+      - uses: siacodelabs/setup-pandoc@ae6943ddd791fe2afdbb753b1baef3780e37e673
       - run: bun i
       - run: bun format:check
       - run: bun generate
