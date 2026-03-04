@@ -15,7 +15,7 @@ jobs:
         with:
           packages: pandoc
       - uses: chetan/git-restore-mtime-action@d186aca54f8760da4dec55313195e51ed3ebb0b3
-      - uses: oven-sh/setup-bun@3d267786b128fe76c2f16a390aa2448b815359f3
+      - uses: oven-sh/setup-bun@ecf28ddc73e819eb6fa29df6b34ef8921c743461
       - run: bun i
       - run: bun format:check
       - run: bun generate
