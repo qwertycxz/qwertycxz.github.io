@@ -15,6 +15,9 @@
 	},
 	"theme": "a4",
 	"theme_config": {
+		"baseElement": {
+			"target": "_top"
+		},
 		"comment": {
 			"enable": true,
 			"giscus": {
@@ -29,6 +32,7 @@
 			},
 			"use": "giscus"
 		},
+		"displayTitleInTab": true,
 		"favicon": "/images/favicon.svg",
 		"footerLink": {
 			"info": "若无特殊说明，本站",
