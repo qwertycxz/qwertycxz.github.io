@@ -11,14 +11,16 @@ jobs:
           fetch-depth: 0
           filter: blob:none
           submodules: recursive
+      - uses: actions/setup-node@main
+        with:
+          cache: npm
+      - run: npm i
+      - run: npm run format:check
       - uses: awalsh128/cache-apt-pkgs-action@681749ae568c81c2037cb9185e38b709b261bd2f
         with:
           packages: pandoc
       - uses: chetan/git-restore-mtime-action@d186aca54f8760da4dec55313195e51ed3ebb0b3
-      - uses: oven-sh/setup-bun@0c5077e51419868618aeaa5fe8019c62421857d6
-      - run: bun i
-      - run: bun format:check
-      - run: bun generate
+      - run: npm run generate
       - uses: actions/upload-pages-artifact@main
         with:
           path: public

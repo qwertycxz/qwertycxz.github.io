@@ -3,9 +3,9 @@ updates:
   - assignees: [qwertycxz]
     commit-message:
       include: scope
-      prefix: bun
+      prefix: npm
     directory: /
-    package-ecosystem: bun
+    package-ecosystem: npm
     schedule:
       interval: daily
   - assignees: [qwertycxz]

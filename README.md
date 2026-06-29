@@ -4,17 +4,17 @@
 
 ## 依赖
 
-`bun`、`pandoc`
+`npm`、`pandoc`
 
 ## 部署
 
 ```sh
-bun i
-bun post <name> # 发布新博文
-bun page <name> # 发布新页面
-bun format # 使用Prettier格式化
-bun generate # 生成静态页面至public目录
-bun dev # 监控source目录文件修改，实时更新到public目录
+npm i
+npm run post <name> # 发布新博文
+npm run page <name> # 发布新页面
+npm run format # 使用Prettier格式化
+npm run generate # 生成静态页面至public目录
+npm run dev # 监控source目录文件修改，实时更新到public目录
 ```
 
 ## 许可证
