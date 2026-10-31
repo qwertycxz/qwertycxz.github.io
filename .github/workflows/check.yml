@@ -1,15 +1,15 @@
 # yaml-language-server: $schema=https://json.schemastore.org/github-workflow
 jobs:
-  page:
+  check:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@main
       - uses: actions/setup-node@main
         with:
           cache: npm
-      - run: npm i
+      - run: npm ci
       - run: npm run format:check
-name: Format
+      - run: npm run lint
 on: pull_request
 permissions:
   contents: read

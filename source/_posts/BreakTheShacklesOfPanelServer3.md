@@ -42,14 +42,14 @@ Systemd是Init.d的替代品，虽然很多人都不知道，但实际上Systemd
 
 但有个问题，不知道你有没有发现：
 
-```
+```text
 I have no name!@xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:~$ whoami
 whoami: cannot find name for user ID 998
 ```
 
 我们当前的用户没有一个用户名！查阅`/etc/passwd`发现用户ID为998的用户压根不存在……
 
-```
+```text
 I have no name!@xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx:~$ cat /etc/passwd
 root:x:0:0:root:/root:/bin/bash
 daemon:x:1:1:daemon:/usr/sbin:/usr/sbin/nologin
@@ -115,7 +115,7 @@ bun i -g pm2
 
 以第一期的目录结构为例：
 
-```
+```text
 .
 ├── worlds
 │   ├── creative
@@ -226,7 +226,7 @@ pm2-logs-attach-input minecraft --lines 0
 
 进入交互式界面后，可以实时查看浏览各进程发来的日志。若要发送命令，只需要输入：
 
-```
+```sh
 velocity glist all
 creative gamemode creative @a
 survival gamerule keepInventory true

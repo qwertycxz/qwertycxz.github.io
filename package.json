@@ -14,6 +14,7 @@
 	},
 	"description": "qwerty吃小庄的个人博客",
 	"devDependencies": {
+		"@biomejs/biome": "^2.6.3",
 		"prettier": "^3.9.10"
 	},
 	"funding": "https://ko-fi.com/qwertycxz",
@@ -27,7 +28,6 @@
 	],
 	"license": "(Apache-2.0 OR CC-BY-4.0)",
 	"name": "qwertycxz.github.io",
-	"private": true,
 	"prettier": {
 		"arrowParens": "avoid",
 		"jsxSingleQuote": true,
@@ -38,12 +38,15 @@
 		"tabWidth": 2,
 		"useTabs": true
 	},
+	"private": true,
 	"repository": "https://github.com/qwertycxz/qwertycxz.github.io",
 	"scripts": {
 		"dev": "hexo --config hexo.json generate -w",
 		"format": "prettier -w .",
 		"format:check": "prettier -c .",
 		"generate": "hexo --config hexo.json generate",
+		"lint": "biome check",
+		"lint:fix": "biome check --fix --unsafe",
 		"page": "hexo --config hexo.json new page",
 		"post": "hexo --config hexo.json new scaffold_post"
 	}

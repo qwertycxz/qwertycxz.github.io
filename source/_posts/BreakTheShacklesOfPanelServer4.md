@@ -30,7 +30,7 @@ VSCode自带两种远程连接支持，SSH和隧道。
 
 `nslookup`[^1]一波github.com，发现访问被解析到了127.0.0.1。`cat /etc/hosts`一看：
 
-```
+```hosts
 127.0.0.1	raw.githubusercontent.com
 127.0.0.1	moddinglegacy.com
 127.0.0.1	blamejared.com
@@ -134,7 +134,7 @@ Bun在启动时会读取`./bunfig.toml`配置文件。既然每次我们每次�
 
 日志显示：
 
-```
+```text
 Copying file to remote with "C:\Windows\System32\OpenSSH\scp.exe" "vscode-cli-6f17636121051a53c88d3e605c491d22af2ba755.tar.gz" "vscode-cli-6f17636121051a53c88d3e605c491d22af2ba755.tar.gz.done" "panel-server":"/home/container/.vscode-server"
 ```
 
@@ -191,7 +191,7 @@ pm2 start telnetd -n telnet --namespace shell -- -Fb 127.23.0.1 -l bash
 
 修改PC的`.ssh/config`。看这个端口号，懂的都懂，这么配就行。
 
-```
+```config
 Host panel-server
   HostName example.com
   IdentityFile ~/.ssh/panel-server.pem

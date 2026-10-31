@@ -76,7 +76,7 @@ Impulse是一个Velocity插件，以AGPLv3开源于[GitHub](https://github.com/A
 
 你不一定要完全按照和我一样的结构来组织文件，以下是一个示例结构，后续步骤按照此目录结构进行说明：
 
-```
+```text
 .
 ├── plugins
 │   ├── impulse

@@ -14,8 +14,9 @@ jobs:
       - uses: actions/setup-node@main
         with:
           cache: npm
-      - run: npm i
+      - run: npm ci
       - run: npm run format:check
+      - run: npm run lint
       - uses: awalsh128/cache-apt-pkgs-action@553a35bb8ebd9fcabcb1c9451aa4c98e1b4ca8a9
         with:
           packages: pandoc
@@ -25,7 +26,6 @@ jobs:
         with:
           path: public
       - uses: actions/deploy-pages@main
-name: Page
 on:
   push:
     branches: [master]
