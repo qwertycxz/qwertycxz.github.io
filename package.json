@@ -14,7 +14,7 @@
 	},
 	"description": "qwerty吃小庄的个人博客",
 	"devDependencies": {
-		"@biomejs/biome": "^2.6.6",
+		"@biomejs/biome": "^2.6.8",
 		"prettier": "^3.10.1"
 	},
 	"funding": "https://ko-fi.com/qwertycxz",
